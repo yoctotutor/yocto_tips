@@ -1,0 +1,10 @@
+create local gits for yocto recipes bb file
+
+download opencv from github 
+cd Videos/
+git clone 	https://github.com/opencv/opencv.git
+cd opencv 
+git checkout master
+
+vim opencv_git.bb
+SRC_URI = "git:///home/dell/Videos/opencv;protocol=file;name=opencv;branch=master; \
